@@ -1,12 +1,14 @@
-name: CII Workflow
+name: CI/CD Workflow
 
 on:
   push:
     branches:
       - main
+      - new-branch
   pull_request:
     branches:
       - main
+      - new-branch
   workflow_dispatch:
     inputs:
       example_input:
@@ -19,4 +21,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Just run command
-        run: echo "Hello, World! this is the CII workflow"
+        run: echo "Hello, World! this is the CD workflow"
