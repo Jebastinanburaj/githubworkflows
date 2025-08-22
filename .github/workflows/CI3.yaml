@@ -1,14 +1,14 @@
-name: CI/CD Workflow
+name: CI/CD3333 Workflow
 
 on:
   push:
     branches:
       - main
-      - new-branch
+      - ghost-workflow-creation
   pull_request:
     branches:
       - main
-      - new-branch
+      - ghost-workflow-creation
   workflow_dispatch:
     inputs:
       example_input:
